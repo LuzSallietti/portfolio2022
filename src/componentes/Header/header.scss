@@ -1,0 +1,111 @@
+header {
+    position: relative;
+    overflow: hidden;
+}
+.header-bars {
+    background-color: #e877a6;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media (min-width:1439px){
+        display: none;
+    }
+}
+.header-bars-active {
+    background-color: rgba(255,255,255,.75);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header-nav {
+    background-color: #e877a6;    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 3rem;   
+    text-align: center;
+    @media (min-width:1439px){
+        width: 75%;
+        left: 12.5%;
+        border-radius: 7px;
+    }    
+    ul {
+        padding: 1rem;        
+        @media (min-width:1439px){
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+        }
+        li {
+            list-style: none;
+            padding-top: 1.5rem;            
+            @media (min-width:1439px){
+                margin-right: 3rem;
+                padding-top: 0;
+                font-size: 1.15rem;
+                &:last-of-type {
+                    position: absolute;
+                    right: 1rem;
+                    margin-right: 0;
+                }                
+            }
+            a {                
+                color: #252835;
+                font-weight: 700;
+                text-decoration: none;
+                transition: all .5s ease;
+                @media (min-width:1439px){
+                    &:hover {
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }                
+            }
+        }
+    }
+}
+
+.menu-hidden {
+    transform:translateX(100%);
+    transition: all .5s ease;
+    @media (min-width:1439px){
+        transform: translateX(0%);
+    }
+}
+.menu-visible {
+    transform: translateX(0%);
+    transition: all .5s ease;
+}
+.btn {
+    background-color: #252835;
+    color:#e877a6 !important;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+}
+.animate-menu {
+    animation: displayMenu .7s ease;
+}
+
+@keyframes displayMenu {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: auto;
+        }
+}
