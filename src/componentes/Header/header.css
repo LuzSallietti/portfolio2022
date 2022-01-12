@@ -60,8 +60,8 @@ header {
 }
 @media (min-width: 1439px) {
   .header-nav {
-    width: 75%;
-    left: 12.5%;
+    width: 95%;
+    left: 2.5%;
     border-radius: 7px;
   }
 }
@@ -163,5 +163,83 @@ header {
   to {
     margin-left: auto;
   }
+}
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 7rem;
+}
+
+.about-intro {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.about-intro h1 {
+  font-size: 3rem;
+  width: 100%;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 1.2px;
+}
+.about-intro p {
+  font-size: 1.1rem;
+  background-color: #ddc62c;
+  color: #252835;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 1.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #252835;
+  color: #dee1ee;
+  margin-top: 1rem;
+  border-radius: 7px;
+  margin-right: 0.5rem;
+}
+
+.about-intro-img {
+  width: 55px;
+  height: auto;
+  margin-right: 1rem;
+}
+.about-intro-img img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=header.css.map */

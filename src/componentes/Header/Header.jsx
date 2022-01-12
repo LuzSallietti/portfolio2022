@@ -1,5 +1,9 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import glasses from '../../img/glasses.svg';
+import rainbow from '../../img/rainbow.svg';
+import disk from '../../img/disk.svg';
+import snickers from '../../img/snickers.svg';
 import './header.scss'
 const Header = () => {
     
@@ -25,30 +29,28 @@ const Header = () => {
                 <li><Link to="#contact" className='btn'>Contactame</Link></li>
             </ul>
         </nav>
-        <section id='about'>
-            <div>
-                <div>
-                    <img src="" alt="">                        
+        <section id='about' className='about'>
+            <div className='about-intro'>
+                <div className='about-intro-img'>
+                    <img src={glasses} alt=""></img>                
+                </div>
+                <div className='about-intro-img'>
+                    <img src={rainbow} alt="">                    
                     </img>
                 </div>
-                <div>
-                    <img src="" alt="">                        
+                <div className='about-intro-img'>
+                    <img src={disk} alt="">                       
                     </img>
                 </div>
-                <div>
-                    <img src="" alt="">                       
+                <div className='about-intro-img'>
+                    <img src={snickers} alt="">                        
                     </img>
-                </div>
-                <div>
-                    <img src="" alt="">                        
-                    </img>
-                </div>
-                <div>
-                    <img src="" alt="">                        
-                    </img>
-                </div>
+                </div>                
                 <h1>Hola mundo!</h1>
-                <p>Soy Luz, estudiante de desarrollo web y comunicadora social. Me encanta resolver problemas de manera creativa, traducir ideas en productos que resuelven problemas y cautivan al usuario.</p>
+                <p>Soy Luz, estudiante de desarrollo web y comunicadora social. Me encanta resolver problemas de manera creativa, traducir ideas en productos que resuelven problemas y cautivan al usuario.<br></br>
+                <span className='profile-btn'><i class="fab fa-github"></i></span>
+                <span className='profile-btn'><i class="fab fa-linkedin-in"></i></span>
+                </p>                
             </div>
             <div>
                 <img src="" alt=""></img>
