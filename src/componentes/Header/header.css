@@ -57,6 +57,7 @@ header {
   width: 100%;
   top: 3rem;
   text-align: center;
+  z-index: 10;
 }
 @media (min-width: 1439px) {
   .header-nav {
@@ -178,6 +179,11 @@ header {
           justify-content: center;
   padding-top: 7rem;
 }
+@media (min-width: 1440px) {
+  .about {
+    padding-top: 10rem;
+  }
+}
 
 .about-intro {
   width: 100%;
@@ -190,6 +196,11 @@ header {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+@media (min-width: 1440px) {
+  .about-intro {
+    width: 50%;
+  }
+}
 .about-intro h1 {
   font-size: 3rem;
   width: 100%;
@@ -197,26 +208,46 @@ header {
   margin: 0;
   letter-spacing: 1.2px;
 }
+@media (min-width: 768px) {
+  .about-intro h1 {
+    font-size: 4.5rem;
+  }
+}
 .about-intro p {
   font-size: 1.1rem;
   background-color: #ddc62c;
   color: #252835;
   font-weight: 600;
   border-radius: 7px;
-  padding: 1.5rem 1rem;
+  padding: 2rem 1.5rem 4rem 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 75%, 2% 85%);
+          clip-path: polygon(0 0, 100% 5%, 100% 75%, 2% 85%);
+}
+@media (min-width: 768px) {
+  .about-intro p {
+    width: 75%;
+  }
+}
+@media (min-width: 1440px) {
+  .about-intro p {
+    width: 100%;
+    padding-top: 2rem;
+  }
 }
 
 .profile-btn {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,11 +257,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #252835;
-  color: #dee1ee;
-  margin-top: 1rem;
+  background-color: #3F3735;
+  color: #e877a6;
+  margin-top: 1.5rem;
   border-radius: 7px;
   margin-right: 0.5rem;
+  border: 1.5px dashed #3F3735;
+  /*box-shadow: 0px 0px 0px 3px white;*/
 }
 
 .about-intro-img {
@@ -241,5 +274,20 @@ header {
 .about-intro-img img {
   width: 100%;
   height: auto;
+}
+
+.about-photo {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .about-photo {
+    display: block;
+    width: 40%;
+    height: auto;
+  }
+  .about-photo img {
+    width: 100%;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=header.css.map */

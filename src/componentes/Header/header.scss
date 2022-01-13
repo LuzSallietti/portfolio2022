@@ -35,6 +35,7 @@ header {
     width: 100%;
     top: 3rem;   
     text-align: center;
+    z-index: 10;
     @media (min-width:1439px){
         width: 95%;
         left: 2.5%;
@@ -115,18 +116,27 @@ header {
     align-items: center;
     justify-content: center;
     padding-top: 7rem;
+    @media (min-width:1440px){
+        padding-top: 10rem;
+    }
 }
 .about-intro {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    @media (min-width:1440px){
+        width: 50%;
+    }
     h1 {
         font-size: 3rem;
         width: 100%;
         font-weight: 900;
         margin: 0;
         letter-spacing: 1.2px;
+        @media (min-width: 768px){
+            font-size: 4.5rem;
+        }
     }
     p {
         font-size: 1.1rem;
@@ -134,23 +144,35 @@ header {
         color: #252835 ;
         font-weight: 600;
         border-radius: 7px;
-        padding: 1.5rem 1rem;
+        padding: 2rem 1.5rem 4rem 1.5rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center
+        justify-content: flex-start;        
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        clip-path: polygon(0 0, 100% 5%, 100% 75%, 2% 85%);
+        @media (min-width: 768px){
+            width: 75%;
+        }
+        @media (min-width: 1440px){
+            width: 100%;
+            padding-top: 2rem;
+        }
     }
 }
 .profile-btn {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #252835;
-    color: #dee1ee;
-    margin-top:1rem;
+    background-color: #3F3735;
+    color: #e877a6;
+    margin-top: 1.5rem;
     border-radius: 7px;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
+    border: 1.5px dashed #3F3735;
+    /*box-shadow: 0px 0px 0px 3px white;*/
 }
 .about-intro-img {
     width: 55px;
@@ -159,5 +181,17 @@ header {
     img {
         width: 100%;
         height: auto;
+    }
+}
+.about-photo {
+    display: none;
+    @media (min-width: 1440px){
+        display: block;
+        width: 40%;
+        height: auto;        
+        img {
+            width: 100%;
+            height: auto;                        
+        }
     }
 }

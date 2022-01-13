@@ -4,6 +4,7 @@ import glasses from '../../img/glasses.svg';
 import rainbow from '../../img/rainbow.svg';
 import disk from '../../img/disk.svg';
 import snickers from '../../img/snickers.svg';
+import profile from '../../img/luz.png';
 import './header.scss'
 const Header = () => {
     
@@ -52,8 +53,8 @@ const Header = () => {
                 <span className='profile-btn'><i class="fab fa-linkedin-in"></i></span>
                 </p>                
             </div>
-            <div>
-                <img src="" alt=""></img>
+            <div className='about-photo'>
+                <img src={profile} alt=""></img>
             </div>
         </section>
     </header>
