@@ -49,8 +49,9 @@ const Header = () => {
                 </div>                
                 <h1>Hola mundo!</h1>
                 <p>Soy Luz, estudiante de desarrollo web y comunicadora social. Me encanta resolver problemas de manera creativa, traducir ideas en productos que resuelven problemas y cautivan al usuario.<br></br>
-                <span className='profile-btn'><i class="fab fa-github"></i></span>
-                <span className='profile-btn'><i class="fab fa-linkedin-in"></i></span>
+                <span className='profile-btn'><a href="https://www.github.com/LuzSallietti" target="_blank"><i className="fab fa-github"></i></a></span>
+                <span className='profile-btn'><a href="https://ar.linkedin.com/in/luzsallietti" target="_blank"><i className="fab fa-linkedin-in"></i></a></span>
+                <span className='profile-btn'><Link to="#">mi cv</Link></span>
                 </p>                
             </div>
             <div className='about-photo'>

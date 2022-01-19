@@ -7,15 +7,9 @@ header {
   background-color: #e877a6;
   width: 3rem;
   height: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -30,15 +24,9 @@ header {
   background-color: rgba(255, 255, 255, 0.75);
   width: 3rem;
   height: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -46,13 +34,8 @@ header {
 
 .header-nav {
   background-color: #e877a6;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: absolute;
   width: 100%;
   top: 3rem;
@@ -71,15 +54,9 @@ header {
 }
 @media (min-width: 1439px) {
   .header-nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
   }
 }
@@ -103,7 +80,6 @@ header {
   color: #252835;
   font-weight: 700;
   text-decoration: none;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 @media (min-width: 1439px) {
@@ -114,22 +90,17 @@ header {
 }
 
 .menu-hidden {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: all 0.5s ease;
+  transform: translateX(100%);
   transition: all 0.5s ease;
 }
 @media (min-width: 1439px) {
   .menu-hidden {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
 .menu-visible {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  -webkit-transition: all 0.5s ease;
+  transform: translateX(0%);
   transition: all 0.5s ease;
 }
 
@@ -166,17 +137,10 @@ header {
   }
 }
 .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   padding-top: 7rem;
 }
 @media (min-width: 1440px) {
@@ -187,16 +151,11 @@ header {
 
 .about-intro {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .about-intro {
     width: 50%;
   }
@@ -219,15 +178,10 @@ header {
   color: #252835;
   font-weight: 600;
   border-radius: 7px;
-  padding: 2rem 1.5rem 4rem 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding: 2rem 1.5rem 5rem 1.5rem;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   background-position: bottom right;
   background-repeat: no-repeat;
   -webkit-clip-path: polygon(0 0, 100% 5%, 100% 75%, 2% 85%);
@@ -246,24 +200,24 @@ header {
 }
 
 .profile-btn {
-  width: 2rem;
+  width: auto;
   height: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #3F3735;
   color: #e877a6;
   margin-top: 1.5rem;
   border-radius: 7px;
   margin-right: 0.5rem;
   border: 1.5px dashed #3F3735;
+  padding: 0 0.5rem;
   /*box-shadow: 0px 0px 0px 3px white;*/
+}
+.profile-btn a {
+  color: #e877a6;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .about-intro-img {
@@ -279,7 +233,7 @@ header {
 .about-photo {
   display: none;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .about-photo {
     display: block;
     width: 40%;

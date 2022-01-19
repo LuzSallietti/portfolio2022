@@ -1,6 +1,6 @@
 .wrapper {
   margin: 0 1rem;
-  max-width: 1600px;
+  max-width: 17990px;
 }
 @media (min-width: 1024px) {
   .wrapper {
@@ -12,7 +12,7 @@
     margin: 0 8rem;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1800px) {
   .wrapper {
     margin: 0 auto;
   }

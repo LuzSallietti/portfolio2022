@@ -1,0 +1,16 @@
+.training {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: s;
+  align-items: flex-start;
+}
+
+.training__divider {
+  width: 100%;
+  text-align: center;
+}
+.training__divider img {
+  width: 2.25rem;
+  height: auto;
+}
+/*# sourceMappingURL=main.css.map */
