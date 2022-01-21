@@ -16,7 +16,6 @@ const Main = () => {
                 <img src={line} alt=""></img>
             </div>
         </section>
-
     </main>
     </>
 }

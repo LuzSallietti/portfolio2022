@@ -12,8 +12,8 @@ const Footer = () => {
             </div>
             <nav className='footer__nav'>
                 <ul>
-                    <li><Link to="https://github.com/LuzSallietti"><i class="fab fa-github"></i></Link></li>
-                    <li><Link to="https://ar/linkedin.com/luzsallietti"><i class="fab fa-linkedin-in"></i></Link></li>                
+                    <li><a href="https://github.com/LuzSallietti" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href='https://ar.linkedin.com/in/luzsallietti' target="_blank"><i class="fab fa-linkedin-in"></i></a></li>                
                 </ul>
             </nav>
         </div>

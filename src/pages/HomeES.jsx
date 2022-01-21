@@ -1,6 +1,7 @@
 import './homeEs.scss';
 import Header from "../componentes/Header/Header";
 import Main from '../componentes/Main/Main';
+import Contact from '../componentes/Main/Contact/Contact';
 import Footer from '../componentes/Footer/Footer';
 
 const HomeES = () => {
@@ -9,6 +10,7 @@ const HomeES = () => {
         <Header/>
         <Main/>       
     </div>
+    <Contact/>
     <Footer/>
     </>
 

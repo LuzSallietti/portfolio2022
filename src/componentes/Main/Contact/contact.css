@@ -1,0 +1,41 @@
+.contact {
+  background-color: #e877a6;
+  background-image: url("../../../img/waves.svg");
+  padding: 9rem 1rem 4rem;
+  background-repeat: no-repeat;
+  background-position: 50% -2px;
+  text-align: center;
+  color: #252835;
+}
+@media (min-width: 1024px) {
+  .contact {
+    padding: 11rem 5rem 4rem;
+    background-size: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .contact {
+    padding: 14rem 8rem 4rem;
+  }
+}
+.contact h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+.contact p {
+  width: 50%;
+  margin: 1rem auto;
+}
+@media (min-width: 1440px) {
+  .contact p {
+    width: 33%;
+  }
+}
+.contact .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem auto 0;
+}
+/*# sourceMappingURL=contact.css.map */

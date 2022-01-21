@@ -1,0 +1,32 @@
+.contact {
+    background-color: #e877a6;
+    background-image: url('../../../img/waves.svg');
+    padding: 9rem 1rem 4rem;
+    background-repeat: no-repeat;
+    background-position: 50% -2px;
+    text-align: center;
+    color: rgb(37, 40, 53);
+    @media (min-width:1024px){
+        padding: 11rem 5rem 4rem;
+        background-size: 100%;
+    }
+    @media (min-width:1440px){
+        padding: 14rem 8rem 4rem;       
+    }    
+    h2 {
+        font-size: 2rem;
+        font-weight: 900;
+        letter-spacing: .5px;
+    }
+    p {
+        width: 50%;
+        margin: 1rem auto;
+        @media (min-width:1440px){
+            width: 33%;       
+        }
+    }
+    .btn {
+        width: fit-content;
+        margin: 2rem auto 0;
+    }
+}

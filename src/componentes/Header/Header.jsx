@@ -27,7 +27,7 @@ const Header = () => {
                 <li><Link to="#education">Educación</Link></li>
                 <li><Link to="#projects">Proyectos</Link></li>
                 <li><Link to="#experience">Experiencia</Link></li>
-                <li><Link to="#contact" className='btn'>Contactame</Link></li>
+                <li><Link to="mailto:luzsallietti@gmail.com" className='btn'>Contactame</Link></li>
             </ul>
         </nav>
         <section id='about' className='about'>
