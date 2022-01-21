@@ -1,6 +1,7 @@
 import './main.scss';
 import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
+import Project from './Project/Project';
 import line from '../../img/line.svg';
 
 const Main = () => {
@@ -16,6 +17,7 @@ const Main = () => {
                 <img src={line} alt=""></img>
             </div>
         </section>
+        <Project/>
     </main>
     </>
 }
