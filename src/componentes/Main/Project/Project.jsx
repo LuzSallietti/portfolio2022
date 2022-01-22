@@ -1,34 +1,42 @@
-import movflix from '../../../img/movflix.png';
+import { useState } from 'react';
+import projectsDB from '../../../data/projects';
 import './project.scss';
 
 const Project = () => {
+    let [counter, setCounter] = useState(0);
+    const moveCarouselRigth = (counter) => {
+        counter < (projectsDB.length-1) ? setCounter(counter+1) : setCounter(0);
+    }
+    const moveCarouselLeft = (counter) => {
+        counter === 0 ? setCounter(projectsDB.length-1) : setCounter(counter-1);
+    }
+    console.log(counter)
     return <>
     <section className='projects'>
         <h2>Proyectos</h2>
-        <i class="fas fa-chevron-left projects__chevron"></i>
+        <i class="fas fa-chevron-left projects__chevron" onClick={() => moveCarouselLeft(counter)}></i>
         <article className='project'>
             <div className='project__img'>
                 <div className="project__img--container">
-                    <img src={movflix} alt="pantalla principal de proyecto" />
+                    <img src={projectsDB[counter].image} alt="pantalla principal de proyecto" />
                 </div>
                 <ul className='project__img--icons'>                    
-                    <li>
-                        <i class="fab fa-react"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-bootstrap"></i>
-                    </li>
+                    {projectsDB[counter].techIcons.map((icon, i) => {
+                        return <>
+                        <li key={i}><i className={icon}></i></li>
+                        </>
+                    })}
                 </ul>
             </div>
             <div className='project__details'>
-                <span>Single Page Application</span>
-                <h3>Movflix</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut illum dicta sint et laudantium, commodi pariatur repellendus culpa veniam quasi esse. Corporis veniam atque culpa laborum nam velit magni tempore.</p>
-                <a href="#" className='project__details--btn'>Ver online</a>
-                <a href="#" className='project__details--btn'>Repositorio</a>
+                <span>{projectsDB[counter].type}</span>
+                <h3>{projectsDB[counter].name}</h3>
+                <p>{projectsDB[counter].description}</p>
+                {projectsDB[counter].site ? <a href={projectsDB[counter].site} className='project__details--btn'>Ver online</a> : "" }
+                {projectsDB[counter].repo ? <a href={projectsDB[counter].repo} className='project__details--btn'>Repositorio</a> : ""}
             </div>
-        </article>
-        <i class="fas fa-chevron-right projects__chevron"></i>
+        </article>       
+        <i class="fas fa-chevron-right projects__chevron" onClick={() => moveCarouselRigth(counter)}></i>
     </section>
     </>
 }
