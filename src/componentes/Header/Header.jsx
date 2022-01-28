@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import MailTo from '../MailTo/MailTo';
 import glasses from '../../img/glasses.svg';
 import rainbow from '../../img/rainbow.svg';
 import disk from '../../img/disk.svg';
@@ -27,7 +28,7 @@ const Header = () => {
                 <li><Link to="#education">Educación</Link></li>
                 <li><Link to="#projects">Proyectos</Link></li>
                 <li><Link to="#experience">Experiencia</Link></li>
-                <li><Link to="mailto:luzsallietti@gmail.com" className='btn'>Contactame</Link></li>
+                <li><MailTo email="luzsallietti@gmail.com" subject="Contacto desde tu Portfolio web" className="btn" linkText="Contactame"/></li>
             </ul>
         </nav>
         <section id='about' className='about'>
