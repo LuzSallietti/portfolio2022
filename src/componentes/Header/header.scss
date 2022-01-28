@@ -1,3 +1,5 @@
+@import './animations.scss';
+
 header {
     position: relative;
     overflow: hidden;
@@ -193,12 +195,26 @@ header {
         height: auto;
     }
 }
+.snickers {
+    animation: icon-from-top 1s ease;
+
+}
+.disk {
+    animation: icon-from-right 2s ease;
+}
+.rainbow {
+    animation:icon-from-top 3s ease;
+}
+.glasses {
+    animation: icon-from-right 4s ease;
+}
 .about-photo {
     display: none;
     @media (min-width: 1280px){
         display: block;
         width: 40%;
-        height: auto;        
+        height: auto;
+        animation: mooving 1.5s ease infinite alternate;        
         img {
             width: 100%;
             height: auto;                        

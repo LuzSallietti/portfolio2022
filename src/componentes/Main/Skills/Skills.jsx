@@ -9,7 +9,7 @@ import './skills.scss';
 
 const Skills = () => {
     return <>
-    <div className="skills" id="skills">
+    <div className="skills" id="skills" data-aos='fade-up-left'>
         <h2 className="skills__title">Skillsets</h2>
         <h3>Desarrollo Web</h3>
         <ul className="skills__ul">

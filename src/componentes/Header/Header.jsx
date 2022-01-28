@@ -32,18 +32,18 @@ const Header = () => {
         </nav>
         <section id='about' className='about'>
             <div className='about-intro'>
-                <div className='about-intro-img'>
+                <div className='about-intro-img glasses'>
                     <img src={glasses} alt=""></img>                
                 </div>
-                <div className='about-intro-img'>
+                <div className='about-intro-img rainbow'>
                     <img src={rainbow} alt="">                    
                     </img>
                 </div>
-                <div className='about-intro-img'>
+                <div className='about-intro-img disk'>
                     <img src={disk} alt="">                       
                     </img>
                 </div>
-                <div className='about-intro-img'>
+                <div className='about-intro-img snickers'>
                     <img src={snickers} alt="">                        
                     </img>
                 </div>                
@@ -54,7 +54,7 @@ const Header = () => {
                 <span className='profile-btn'><Link to="#">mi cv</Link></span>
                 </p>                
             </div>
-            <div className='about-photo'>
+            <div className='about-photo' data-aos="fade-up-left">
                 <img src={profile} alt=""></img>
             </div>
         </section>

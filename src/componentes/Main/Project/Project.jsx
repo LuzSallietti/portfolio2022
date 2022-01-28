@@ -12,7 +12,7 @@ const Project = () => {
     }
     console.log(counter)
     return <>
-    <section className='projects' id='projects'>
+    <section className='projects' id='projects' data-aos="fade-up">
         <h2>Proyectos</h2>
         <i class="fas fa-chevron-left projects__chevron" onClick={() => moveCarouselLeft(counter)}></i>
         <article className='project'>

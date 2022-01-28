@@ -8,12 +8,12 @@ const Main = () => {
     return <>
     <main>
         <section className="training">
-            <div className='training__divider'>
+            <div className='training__divider' data-aos="fade-down">
                 <img src={line} alt=""></img>
             </div>
             <Education/>
             <Skills/>
-            <div className='training__divider'>
+            <div className='training__divider' data-aos="fade-down">
                 <img src={line} alt=""></img>
             </div>
         </section>

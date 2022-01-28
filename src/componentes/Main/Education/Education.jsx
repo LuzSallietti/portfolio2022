@@ -6,7 +6,7 @@ import './education.scss';
 
 const Education = () => {
     return <>
-    <div className='education' id='education'>
+    <div className='education' id='education' data-aos='fade-up-right'>
         <h2 className='education__title'>Formación académica</h2>
         <ul className='education__ul'>
             <li className='education__ul--list'>
