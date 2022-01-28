@@ -13,9 +13,14 @@
 }
 
 .projects__chevron {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #e877a6;
   width: 5%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.projects__chevron:hover {
+  transform: scale(1.25);
 }
 
 .project {

@@ -1,6 +1,5 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import MailTo from '../MailTo/MailTo';
 import glasses from '../../img/glasses.svg';
 import rainbow from '../../img/rainbow.svg';
 import disk from '../../img/disk.svg';
@@ -24,11 +23,11 @@ const Header = () => {
         </div>
         <nav className='header-nav menu-hidden' ref={menu}>
             <ul>
-                <li><Link to="https://www.cadena3.com">Quién soy</Link></li>
-                <li><Link to="#education">Educación</Link></li>
-                <li><Link to="#projects">Proyectos</Link></li>
-                <li><Link to="#experience">Experiencia</Link></li>
-                <li><MailTo email="luzsallietti@gmail.com" subject="Contacto desde tu Portfolio web" className="btn" linkText="Contactame"/></li>
+                <li><a href='about'>Quién soy</a></li>
+                <li><a href='#education'>Educación</a></li>
+                <li><a href='#skills'>Skills</a></li>
+                <li><a href='#projects'>Proyectos</a></li>                
+                <li><a href='#contact' className='btn'>Contactame</a></li>
             </ul>
         </nav>
         <section id='about' className='about'>

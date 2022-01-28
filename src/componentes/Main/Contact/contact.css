@@ -36,6 +36,10 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 2rem auto 0;
+  margin: 1rem auto 0;
+  border-style: none;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=contact.css.map */
