@@ -5,6 +5,8 @@ import rainbow from '../../img/rainbow.svg';
 import disk from '../../img/disk.svg';
 import snickers from '../../img/snickers.svg';
 import profile from '../../img/luz.png';
+import myCV from '../../cv/LuzSallietti-cv.pdf';
+
 import './header.scss'
 const Header = () => {
     
@@ -51,7 +53,7 @@ const Header = () => {
                 <p>Soy Luz, estudiante de desarrollo web y comunicadora social. Me encanta resolver problemas de manera creativa, traducir ideas en productos que resuelven problemas y cautivan al usuario.<br></br>
                 <span className='profile-btn'><a href="https://www.github.com/LuzSallietti" target="_blank"><i className="fab fa-github"></i></a></span>
                 <span className='profile-btn'><a href="https://ar.linkedin.com/in/luzsallietti" target="_blank"><i className="fab fa-linkedin-in"></i></a></span>
-                <span className='profile-btn'><Link to="#">mi cv</Link></span>
+                <span className='profile-btn'><a href={myCV} target="_blank">mi cv</a></span>
                 </p>                
             </div>
             <div className='about-photo' data-aos="fade-up-left">

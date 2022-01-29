@@ -1,3 +1,51 @@
+@-webkit-keyframes scaleChevron {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(120%);
+  }
+}
+@keyframes scaleChevron {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(120%);
+  }
+}
+@-webkit-keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-7px);
+  }
+}
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-7px);
+  }
+}
+@-webkit-keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -17,10 +65,19 @@
   color: #e877a6;
   width: 5%;
   cursor: pointer;
+  -webkit-animation: scaleChevron 1.5s ease infinite;
+          animation: scaleChevron 1.5s ease infinite;
   transition: all 0.3s ease;
 }
 .projects__chevron:hover {
   transform: scale(1.25);
+}
+.projects__chevron:first-of-type {
+  -webkit-animation: moveLeft 1s ease infinite alternate;
+          animation: moveLeft 1s ease infinite alternate;
+}
+.projects__chevron:last-of-type {
+  animation: moveRight 1s ease infinite alternate-reverse;
 }
 
 .project {
@@ -96,7 +153,6 @@
   letter-spacing: 0.3px;
   border-bottom: 3px solid #e877a6;
   border-radius: 4px;
-  /*line-height: .9rem;*/
   display: inline-block;
   transition: all 0.5s ease;
 }

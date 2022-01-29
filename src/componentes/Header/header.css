@@ -32,22 +32,22 @@
 }
 @-webkit-keyframes mooving {
   from {
-    transform: translateX(5%);
-    transform: rotate(5%);
+    transform: translateX(2%);
+    transform: rotate(2deg);
   }
   to {
-    transform: translateX(-5%);
-    transform: rotate(-5%);
+    transform: translateX(-2%);
+    transform: rotate(-2deg);
   }
 }
 @keyframes mooving {
   from {
-    transform: translateX(5%);
-    transform: rotate(5%);
+    transform: translateX(2%);
+    transform: rotate(2deg);
   }
   to {
-    transform: translateX(-5%);
-    transform: rotate(-5%);
+    transform: translateX(-2%);
+    transform: rotate(-2deg);
   }
 }
 header {
@@ -70,6 +70,9 @@ header {
   .header-bars {
     display: none;
   }
+}
+.header-bars i {
+  font-size: 1.25rem;
 }
 
 .header-bars-active {
@@ -302,8 +305,8 @@ header {
 }
 
 .glasses {
-  -webkit-animation: icon-from-right 4s ease;
-          animation: icon-from-right 4s ease;
+  -webkit-animation: icon-from-right 3s ease;
+          animation: icon-from-right 3s ease;
 }
 
 .about-photo {

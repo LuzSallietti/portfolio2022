@@ -1,3 +1,32 @@
+@keyframes scaleChevron {
+    from {
+        transform: scale(100%);        
+    }
+
+    to {
+        transform: scale(120%);        
+    }    
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-7px);
+    }
+    
+}
+@keyframes moveRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(7px);
+    }
+    
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -16,9 +45,16 @@
     color: #e877a6;
     width: 5%;
     cursor: pointer;
-    transition: all .3s ease;
+    animation: scaleChevron 1.5s ease infinite;
+    transition: all .3s ease;    
     &:hover{
         transform: scale(1.25);
+    }
+    &:first-of-type {
+        animation: moveLeft 1s ease infinite alternate;
+    }
+    &:last-of-type {
+        animation: moveRight 1s ease infinite alternate-reverse;
     }
 }
 .project {
@@ -83,7 +119,6 @@
     letter-spacing: .3px;
     border-bottom: 3px solid #e877a6;
     border-radius: 4px;
-    /*line-height: .9rem;*/
     display: inline-block;
     transition: all .5s ease;
     &:hover {

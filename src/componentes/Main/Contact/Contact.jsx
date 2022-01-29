@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Form } from "./Form";
 import '../../Header/header.scss';
 import './contact.scss';
