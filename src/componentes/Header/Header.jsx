@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
 import glasses from '../../img/glasses.svg';
 import rainbow from '../../img/rainbow.svg';
 import disk from '../../img/disk.svg';
@@ -50,7 +49,7 @@ const Header = () => {
                     </img>
                 </div>                
                 <h1>Hola mundo!</h1>
-                <p>Soy Luz, estudiante de desarrollo web y comunicadora social. Me encanta resolver problemas de manera creativa, traducir ideas en productos que resuelven problemas y cautivan al usuario.<br></br>
+                <p>Soy Luz, estudiante de desarrollo web y comunicadora social. Me encanta resolver problemas de manera creativa, traducir ideas en productos que aportan soluciones y cautivan al usuario.<br></br>
                 <span className='profile-btn'><a href="https://www.github.com/LuzSallietti" target="_blank"><i className="fab fa-github"></i></a></span>
                 <span className='profile-btn'><a href="https://ar.linkedin.com/in/luzsallietti" target="_blank"><i className="fab fa-linkedin-in"></i></a></span>
                 <span className='profile-btn'><a href={myCV} target="_blank">mi cv</a></span>
