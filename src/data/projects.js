@@ -1,8 +1,9 @@
 import movflix from '../img/movflix.png';
 import inrush from '../img/inrush.png';
 import gifos from '../img/gifos.png';
-import cumplekits from '../img/cumplekits.png';
 import expice from '../img/expice.png';
+import conforma from '../img/conforma-color.png';
+import thetraveltranslator from '../img/thetraveltranslator.jpg';
 
 const projectsDB = [
     {
@@ -37,15 +38,33 @@ const projectsDB = [
     },
     {
         id: 4,
-        name: 'CumpleKits',
-        type: 'E-commerce',
-        description: 'Tienda online desarrollada en Wordpress con Woocommerce. Integración de plugins para personalización de producto, medios de pago y moneda múltiple.',
-        site:'https://www.cumplekits.com/',
-        image: cumplekits,
-        techIcons:['fab fa-wordpress', 'fab fa-css3-alt']
+        name: 'Expice',
+        type: 'Landing Page',
+        description: 'Página web estática desarrollada con HTML y CSS, compilada con Sass. La UI está basada en un recurso gratuito disponible para la comunidad de usuarios de Figma.',
+        site:'https://expice-landingpage.vercel.app/',
+        repo:'https://github.com/LuzSallietti/expice-landingpage',
+        image: expice,
+        techIcons:['fab fa-html5','fab fa-sass']
     },
     {
         id: 5,
+        name: 'Conforma Color',
+        type: 'E-commerce',
+        description: 'Tienda online creada con Tienda Nube, estilizada con CSS sobre plantilla de la plataforma. Elección y retoque de fotografías.',
+        site:'https://www.conforma.com.ar/',
+        image: conforma,
+        techIcons:['fab fa-css3-alt']
+    },
+    {
+        id: 6,
+        name: 'The Travel Translator',
+        type: 'Website',
+        description: 'Diseño de UI y desarrollo en Wordpress (en progreso). Sitio de servicios profesionales utilizando plugin Translate Press para traducción múltiple y Elementor como compositor visual.',
+        image: thetraveltranslator,
+        techIcons:['fab fa-wordpress']
+    },
+    {
+        id: 7,
         name: 'Expice',
         type: 'Landing Page',
         description: 'Página web estática desarrollada con HTML y CSS, compilada con Sass. La UI está basada en un recurso gratuito disponible para la comunidad de usuarios de Figma.',
