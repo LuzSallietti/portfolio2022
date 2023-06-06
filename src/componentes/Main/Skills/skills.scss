@@ -1,14 +1,15 @@
 .skills {
     width: 100%;
-    margin-bottom: 1rem;
-    @media (min-width:1280px){
+    margin-bottom: 4rem;
+    /*@media (min-width:1280px){
         width: 45%;
-    }
+    }*/
 }
 .skills__title {
     font-weight: 900;
     font-size: 2rem;
     letter-spacing: .5px;
+    
 }
 .skills__ul {
     display: flex;

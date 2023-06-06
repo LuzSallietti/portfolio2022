@@ -16,8 +16,16 @@ const skillsets = [
         icon:'fab fa-bootstrap'
     },
     {
+        name: 'Tailwind',
+        icon: 'fas fa-code'
+    },
+    {
         name: 'Javascript',
         icon:'fab fa-js-square'
+    },
+    {
+        name: 'Java',
+        icon:'fab fa-java'
     },
     {
         name: 'React JS',
@@ -34,6 +42,10 @@ const skillsets = [
     {
         name: 'Git',
         icon:'fab fa-git-alt'
+    }, 
+    {
+        name: 'MySql',
+        icon: "fa-solid fa-database"
     },
     
 ]

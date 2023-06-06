@@ -50,6 +50,40 @@
     transform: rotate(-2deg);
   }
 }
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #e877a6;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #e877a6;
+  }
+}
 header {
   position: relative;
   overflow: hidden;
@@ -200,7 +234,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 7rem;
 }
 @media (min-width: 1440px) {
@@ -217,22 +251,26 @@ header {
 }
 @media (min-width: 1280px) {
   .about-intro {
-    width: 50%;
+    width: 66%;
+    margin-left: 3rem;
+    margin-top: 4rem;
   }
 }
 .about-intro h1 {
   font-size: 3rem;
+  line-height: 3rem;
   width: 100%;
   font-weight: 900;
-  margin: 0;
   letter-spacing: 1.2px;
 }
 @media (min-width: 768px) {
   .about-intro h1 {
     font-size: 4.5rem;
+    line-height: 4.5rem;
   }
 }
 .about-intro p {
+  margin-top: 3rem;
   font-size: 1.1rem;
   background-color: #ddc62c;
   color: #252835;
@@ -259,6 +297,16 @@ header {
   }
 }
 
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 1rem solid #e877a6; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 1.5px; /* Adjust as needed */
+  -webkit-animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+          animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
 .profile-btn {
   width: auto;
   height: 2rem;
@@ -280,7 +328,7 @@ header {
 }
 
 .about-intro-img {
-  width: 55px;
+  width: 36px;
   height: auto;
   margin-right: 1rem;
 }

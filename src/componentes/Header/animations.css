@@ -37,7 +37,7 @@
   }
   to {
     transform: translateX(-2%);
-    transform: rotate(-5deg);
+    transform: rotate(-2deg);
   }
 }
 @keyframes mooving {
@@ -47,7 +47,41 @@
   }
   to {
     transform: translateX(-2%);
-    transform: rotate(-5deg);
+    transform: rotate(-2deg);
+  }
+}
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #e877a6;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #e877a6;
   }
 }
 /*# sourceMappingURL=animations.css.map */

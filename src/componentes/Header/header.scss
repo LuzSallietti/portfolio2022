@@ -124,7 +124,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding-top: 7rem;
     @media (min-width:1440px){
         padding-top: 10rem;
@@ -133,22 +133,26 @@ header {
 .about-intro {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-wrap: wrap;      
+    justify-content: flex-start;    
     @media (min-width:1280px){
-        width: 50%;
+        width: 66%;
+        margin-left: 3rem;
+        margin-top: 4rem;
     }
     h1 {
         font-size: 3rem;
+        line-height: 3rem;
         width: 100%;
-        font-weight: 900;
-        margin: 0;
+        font-weight: 900;       
         letter-spacing: 1.2px;
         @media (min-width: 768px){
             font-size: 4.5rem;
+            line-height: 4.5rem;
         }
     }
     p {
+        margin-top: 3rem;
         font-size: 1.1rem;
         background-color: #ddc62c;
         color: #252835 ;
@@ -170,6 +174,18 @@ header {
         }
     }
 }
+.typewriter {
+    h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 1rem solid #e877a6; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 1.5px; /* Adjust as needed */
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret .75s step-end infinite;
+    }
+  }
 .profile-btn {
     width: auto;
     height: 2rem;
@@ -190,7 +206,7 @@ header {
     }
 }
 .about-intro-img {
-    width: 55px;
+    width: 36px;
     height: auto;
     margin-right: 1rem;
     img {

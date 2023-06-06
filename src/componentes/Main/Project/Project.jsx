@@ -14,7 +14,7 @@ const Project = () => {
     return <>
     <section className='projects' id='projects' data-aos="fade-up">
         <h2>Proyectos</h2>
-        <i class="fas fa-chevron-left projects__chevron" onClick={() => moveCarouselLeft(counter)}></i>
+        <i className="fas fa-chevron-left projects__chevron" onClick={() => moveCarouselLeft(counter)}></i>
         <article className='project'>
             <div className='project__img'>
                 <div className="project__img--container">
