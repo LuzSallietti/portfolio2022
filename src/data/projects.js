@@ -1,4 +1,5 @@
 import movflix from '../img/movflix.png';
+import planazo from '../img/planazo.png';
 import inrush from '../img/inrush.png';
 import gifos from '../img/gifos.png';
 import expice from '../img/expice.png';
@@ -6,6 +7,16 @@ import conforma from '../img/conforma-color.png';
 import thetraveltranslator from '../img/thetraveltranslator.jpg';
 
 const projectsDB = [
+    {
+        id: 0,
+        name: 'Planazo',
+        type: 'Plataforma web full stack',
+        description: 'Sistema de gestión de reservas desarrollado con ReactJS, Java y Spring Boot, deployado en AWS.',
+        site:'http://planazo-hosting.s3-website.us-east-2.amazonaws.com/',
+        repo:'https://gitlab.ctd.academy/ctd/hispanos/proyecto-integrador-1/proyecto-integrador-0523/1021pt-c7/equipo-05',
+        image: planazo,
+        techIcons:['fab fa-react', 'fab fa-java', 'fa-solid fa-database']
+    },
     {
         id: 1,
         name: 'Movflix',
